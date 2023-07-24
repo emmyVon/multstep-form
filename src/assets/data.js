@@ -23,3 +23,24 @@ export const plans = [
       price: "$15",
     },
   ];
+
+  export const AddonData = [
+    {
+      id:1,
+      info: "Access to multiplayer games",
+      title: "Online Services",
+      price: [`+1/mo`, `+10/yr`],
+    },
+    {
+      id:2,
+      info: "Extra 1TB Of cloud Save",
+      title: "Larger Storage",
+      price: [`+2/mo`, `+20/yr`],
+    },
+    {
+      id:3,
+      info: "Customize theme to your profile",
+      title: "Customizable Profile",
+      price: [`+2/mo`, `+20/yr`],
+    },
+  ];

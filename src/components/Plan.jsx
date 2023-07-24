@@ -13,7 +13,7 @@ const Plan = () => {
           className={`Singleplan ${
             selectedPlan.id === item.id ? "active-plan" : ""
           }`}
-          onClick={Selectplan(item.id)}
+          onClick={() => Selectplan(item.id)} // Use a function in onClick
         >
           <img src={item.image} alt={item.name} />
           <div>

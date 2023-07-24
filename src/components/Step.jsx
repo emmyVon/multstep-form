@@ -33,6 +33,7 @@ const Step = () => {
     <div className="steps">
       {nav.map((i) => (
         <NavLink
+          key={i.count}
           to={i.path}
           className={({ isActive }) =>
             isActive ? "nav-link active" : "nav-link"

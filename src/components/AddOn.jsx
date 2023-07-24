@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { FcCheckmark } from "react-icons/fc";
 import { GlobalContext } from "../Context/StepContext";
 
-const AddOn = ({ title, info, price }) => {
-  const [Select, setSelect] = useState(false);
-  const { planDue } = GlobalContext();
+const AddOn = ({ Addon }) => {
+  const { price, title, info } = Addon;
+  const { planDue, HandleAddon, SelectAddon } = GlobalContext();
   return (
     <div
-      className={Select ? "active-addon add-on" : "add-on"}
-      onClick={() => setSelect((prev) => !prev)}
+      className={SelectAddon ? "active-addon add-on" : "add-on"}
+      onClick={() => HandleAddon(Addon)}
     >
       <div>
         <span>
