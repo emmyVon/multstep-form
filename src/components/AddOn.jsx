@@ -3,11 +3,14 @@ import { FcCheckmark } from "react-icons/fc";
 import { GlobalContext } from "../Context/StepContext";
 
 const AddOn = ({ Addon }) => {
-  const { price, title, info } = Addon;
-  const { planDue, HandleAddon, SelectAddon } = GlobalContext();
+  const { price, title, info, id } = Addon;
+  const { planDue, HandleAddon, addOns } = GlobalContext();
+
+  const isAddonSelected = addOns.find((i) => i.id === id);
+
   return (
     <div
-      className={SelectAddon ? "active-addon add-on" : "add-on"}
+      className={isAddonSelected ? "active-addon add-on" : "add-on"}
       onClick={() => HandleAddon(Addon)}
     >
       <div>

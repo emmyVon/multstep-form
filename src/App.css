@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
-body{
+body {
   background-color: aquamarine;
   height: 100vh;
   display: flex;
@@ -20,7 +20,6 @@ body{
   background-color: white;
   /* box-shadow: 3px 5px black; */
   z-index: 4;
-  
 }
 .form-container {
   width: auto;
@@ -42,28 +41,28 @@ body{
   border-radius: 0 0 0 10px;
 }
 
-.app{
+.app {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   max-width: 1920px;
 }
-.btn{
-  padding:1rem 2rem;
+.btn {
+  padding: 1rem 2rem;
   border-radius: 9px;
-  background-color:blue ;
+  background-color: blue;
   color: white;
-  border:transparent
+  border: transparent;
 }
-.steps{
+.steps {
   display: flex;
   flex-direction: column;
-  align-items:flex-start ;
-  gap:1rem;
-  margin-bottom:2rem
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
-.nav-link{
+.nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,234 +70,229 @@ body{
   pointer-events: none;
   cursor: not-allowed;
 }
-.active .circle{
+.active .circle {
   background-color: lightskyblue;
-    color: black;
+  color: black;
 }
-.G-btn{
-  border:none;
-  color:grey;
+.G-btn {
+  border: none;
+  color: grey;
   font-size: 1rem;
-  background:none
+  background: none;
 }
-.steps p{
-  color:grey
+.steps p {
+  color: grey;
 }
-.steps h3{
+.steps h3 {
   color: white;
 }
-.right-side{
+.right-side {
   width: 90%;
   /* position:relative; */
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   /* align-items: center; */
   gap: 2rem;
   padding: 10px;
   /* justify-content: space-between; */
 }
-.Top{
-display:grid;
-gap:2rem
+.Top {
+  display: grid;
+  gap: 2rem;
 }
-.mid{
-  display:grid;
-  gap:2rem;
+.mid {
+  display: grid;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 /* .right-side>div{
   margin-bottom:2rem
 } */
-.right-side>div span{
+.right-side > div span {
   color: blue;
 }
-.input-box{
-  display:flex;
+.input-box {
+  display: flex;
   flex-direction: column;
-  margin-bottom:1.2rem
+  margin-bottom: 1.2rem;
 }
-.input-box label{
-  margin-bottom:0.5rem
+.input-box label {
+  margin-bottom: 0.5rem;
 }
-.input-box input{
-  padding:0.7rem;
+.input-box input {
+  padding: 0.7rem;
   border-radius: 8px;
   width: 100%;
   outline: none;
   border: 1px solid black;
 }
-.circle{
-  height:2rem;
-  width:2rem;
-  border-radius:50%;
-  border:2px solid white;
+.circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid white;
   display: grid;
   place-items: center;
-  color:white
+  color: white;
 }
-.button-container{
- display: flex;
- justify-content: space-between;
- align-items:center
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* .active{
   
 } */
-.mid-main{
-  display:flex;
-  gap:1.5rem;
-  
+.mid-main {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.Singleplan{
-  display:flex;
-  flex-direction:column;
+.Singleplan {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   /* justify-content: space-between; */
   border: 1px solid grey;
-  padding:1rem ;
+  padding: 1rem;
   min-width: 8rem;
   /* height:10rem; */
   font-size: 0.5rem;
-  font-weight:200;
-  border-radius:8px;
+  font-weight: 200;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-.Singleplan img{
-  height:2rem;
-  width:2rem
+.Singleplan img {
+  height: 2rem;
+  width: 2rem;
 }
- .active-plan {
-   background-color: rgba(128, 0, 128, 0.4);
-   border-color: blue;
- }
-.switch{
+.active-plan {
+  background-color: rgba(128, 0, 128, 0.4);
+  border-color: blue;
+}
+.switch {
   background-color: grey;
-  display:flex;
+  display: flex;
   justify-content: center;
   gap: 1.5rem;
   padding: 1rem 0;
   border-radius: 5px;
 }
-.switch-btn-container{
+.switch-btn-container {
   height: 1.3rem;
-  width:3rem;
-  background-color:darkblue;
-  border-radius:20px;
+  width: 3rem;
+  background-color: darkblue;
+  border-radius: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
 }
-.switch-dot{
+.switch-dot {
   height: 1.2rem;
-  width:1.2rem;
+  width: 1.2rem;
   border-radius: 50%;
   background-color: white;
   position: absolute;
 }
-.switch-monthly{
+.switch-monthly {
   left: 0;
 }
-.switched-yearly{
+.switched-yearly {
   right: 0;
 }
-.add-on{
-  display:flex;
+.add-on {
+  display: flex;
   justify-content: space-between;
-  align-items:center;
-  border:1px solid grey;
-  border-radius:4px;
-  padding:0.5rem 1rem;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
-.active-addon{
+.active-addon {
   background-color: rgba(128, 0, 128, 0.1);
   border-color: blue;
 }
-.active-addon span{
+.active-addon span {
   background-color: blue;
 }
-.active-addon.mark{
+.active-addon.mark {
   display: block;
 }
-.add-ons{
+.add-ons {
   flex-direction: column;
-  
 }
-.add-on>div{
-  display:flex;
-  align-items:center;
-  gap:0.8rem
+.add-on > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
-.add-on span{
-  height:1.2rem;
-  width:1.2rem;
-  border-radius:2px;
-  border:1px solid grey;
+.add-on span {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 2px;
+  border: 1px solid grey;
 }
-.sum-divid{
+.sum-divid {
   width: 100%;
   height: 1px;
   background-color: grey;
 }
-.item{
-  display:flex;
-  justify-content:space-between
+.item {
+  display: flex;
+  justify-content: space-between;
 }
-.Summary{
+.Summary {
   background-color: lightgrey;
   padding: 2rem;
 }
-.final{
+.final {
   display: Grid;
   place-items: center;
   height: 100%;
-  width:100%
+  width: 100%;
 }
 
- @media screen and (max-width:760px) {
-  .form{
+@media screen and (max-width: 760px) {
+  .form {
     margin-top: 3.8rem;
     width: 98vw;
     height: 60vh;
   }
-  .form-container{
+  .form-container {
     grid-template-columns: 1fr;
     border-radius: 0.3rem;
     box-shadow: none;
   }
-  .steps{
+  .steps {
     flex-direction: row;
-   
   }
-  .left-side{
+  .left-side {
     border-radius: 0 0;
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      height: 7rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 7rem;
   }
-  .nav-link div:nth-child(2){
+  .nav-link div:nth-child(2) {
     display: none;
   }
-  .plans{
+  .plans {
     flex-direction: column;
+  }
 
-  }
- 
-  .Singleplan{
+  .Singleplan {
     flex-direction: row;
-   
   }
- 
-  .foot{
+
+  .foot {
     position: absolute;
     background-color: white;
     width: 100%;
     bottom: 0;
     right: 0;
   }
-  
- }   
+}
