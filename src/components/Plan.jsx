@@ -18,7 +18,11 @@ const Plan = () => {
           <img src={item.image} alt={item.name} />
           <div>
             <h2>{item.plan}</h2>
-            <p>{`${item.price}/${planDue === "monthly" ? "mo" : "yr"} `}</p>
+            <p>
+              {`$${planDue === "monthly" ? item.price[0] : item.price[1]}/${
+                planDue === "monthly" ? "mo" : "yr"
+              }`}
+            </p>
           </div>
         </div>
       ))}

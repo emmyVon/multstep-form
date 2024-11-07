@@ -7,11 +7,6 @@ import Form from "../components/Form";
 
 const AddsOn = ({ planDue }) => {
   return (
-    // <Form>
-    //     <div className="left-side">
-    //         <Steps />
-    //     </div>
-    //     <div className="right-side">
     <div className="Top">
       <div className="Header">
         <Header
@@ -23,9 +18,7 @@ const AddsOn = ({ planDue }) => {
         <AddOns planDue={planDue} />
       </div>
 
-      <div className="foot">
-        <Button path={"/Summary"} back={"/plans"} />
-      </div>
+      <Button path={"/Summary"} back={"/plans"} />
     </div>
     // </Form>
   );

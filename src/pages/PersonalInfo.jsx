@@ -7,11 +7,6 @@ import Form from "../components/Form";
 
 const PersonalInfo = () => {
   return (
-    // <Form >
-    //       <div className="left-side">
-    //             <Steps />
-    //         </div>
-    //     <div className="right-side">
     <>
       <div className="Top">
         <div className="Header">
@@ -26,14 +21,7 @@ const PersonalInfo = () => {
       <div className="mid">
         <Input />
       </div>
-
-      <div className="foot">
-        <Button path={"/plans"} back={"null"} />
-      </div>
     </>
-
-    //     </div>
-    // </Form>
   );
 };
 

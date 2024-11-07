@@ -6,23 +6,26 @@ const AddOn = ({ Addon }) => {
   const { price, title, info, id } = Addon;
   const { planDue, HandleAddon, addOns } = GlobalContext();
 
-  const isAddonSelected = addOns.find((i) => i.id === id);
+  const isAddonSelected = addOns.includes(Addon);
 
   return (
     <div
       className={isAddonSelected ? "active-addon add-on" : "add-on"}
-      onClick={() => HandleAddon(Addon)}
+      onClick={(e) => HandleAddon(e, Addon)}
     >
       <div>
-        <span>
+        {/* <span>
           <FcCheckmark style={{ backgroundColor: "white" }} />
-        </span>
+        </span> */}
+        <input type="checkbox" />
         <div>
           <h3>{title}</h3>
           <p>{info}</p>
         </div>
       </div>
-      <p>{planDue === "monthly" ? price[0] : price[1]}</p>
+      <p>{`+$${planDue === "monthly" ? price[0] : price[1]}/${
+        planDue === "monthly" ? "mo" : "yr"
+      }`}</p>
     </div>
   );
 };

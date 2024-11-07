@@ -2,8 +2,10 @@ import React from "react";
 import Sum from "../components/Sum";
 import Button from "../components/Button";
 import Header from "../components/Header";
+import { GlobalContext } from "../Context/StepContext";
 
 const Summary = () => {
+  const { selectedPlan, addOns, planDue } = GlobalContext();
   return (
     <>
       <div className="Top">
@@ -15,21 +17,10 @@ const Summary = () => {
         </div>
       </div>
       <div className="mid">
-        <Sum
-          plan={"Arcade"}
-          price1={`$9/mo`}
-          price2={`+$1/mo`}
-          price3={`+$2/mo`}
-        />
-        <div>
-          <p>Total(per month)</p>
-          <h3>{`+$12/mo`}</h3>
-        </div>
+        <Sum />
       </div>
 
-      <div className="foot">
-        <Button path={"/final"} back={"/addsOn"} />
-      </div>
+      <Button path={"/final"} back={"/addsOn"} />
     </>
   );
 };

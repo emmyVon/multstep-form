@@ -14,22 +14,17 @@ export const ContextProvider = ({ children }) => {
     console.log(selectedPlan);
   };
 
-  const HandleAddon = (selectedAddOn) => {
+  const HandleAddon = (e, selectedAddOn) => {
+    const div = e.currentTarget.firstElementChild;
+    console.log(div);
+    const input = div.querySelector("input");
+    input.checked = true;
     if (addOns.find((i) => i.id === selectedAddOn.id)) {
       setAddOns((prev) => prev.filter((i) => i.id !== selectedAddOn.id));
     } else {
       setAddOns((prev) => [...prev, selectedAddOn]);
     }
   };
-
-  // if(picked){
-  //     setAddOn(prev=>{prev.filter(item=>item.title !== picked.title)})
-  //     setSelectAddon(false)
-  //     return;
-  // }
-  // setAddOn(prev=>[...prev,picked])
-  // setSelectAddon(true)
-  // console.log(Addon)
 
   return (
     <StepContext.Provider
